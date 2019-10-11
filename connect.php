@@ -13,7 +13,7 @@
             }
             else
             {
-                echo "conectado";
+                echo "";
             }
         }
     }

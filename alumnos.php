@@ -34,7 +34,15 @@
         function listar()
         {
             $conexion=$this->connect->conexion;
-            $q="select nombres,apellidos,dni,sexo from alumnos";
+            $query="select nombres,apellidos,dni,sexo from alumnos";
+            $data=$conexion->query($query);
+            while($campo=$data->fetch_assoc())
+            {
+                echo $campo['nombres']," ",
+                     $campo['apellidos']," ",
+                     $campo['dni']," ",
+                     $campo['sexo'],"<br/>";
+            }
         }
         function borrar()
         {
