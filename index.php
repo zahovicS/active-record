@@ -21,10 +21,10 @@
     <body>
         <nav>
             <ul>
-                <li><a href="default.asp" id="active">Registro</a></li>
-                <li><a href="news.asp">Buscar</a></li>
-                <li><a href="contact.asp">Listar</a></li>
-                <li><a href="about.asp">Editar</a></li>
+                <li><a href="#" id="active">Registro</a></li>
+                <li><a href="#">Buscar</a></li>
+                <li><a href="#">Listar</a></li>
+                <li><a href="#">Editar</a></li>
             </ul>
         </nav>
         <div class="content">
@@ -61,7 +61,7 @@
                 Ajax.open("post","proceso.php");
                 Ajax.send(frm);
             });
-            active.className+="active"
+            active.className+="active";
         </script>
     </body>
     </html>
